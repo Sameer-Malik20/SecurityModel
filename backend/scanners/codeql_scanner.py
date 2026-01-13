@@ -85,7 +85,8 @@ class CodeQLScanner:
                 db_path,
                 "--source-root", target_path,
                 f"--language={lang}",
-                "--overwrite"
+                "--overwrite",
+                "--ram=4000"
             ]
             code, out, err = self.runner.run_command(create_cmd, cwd=target_path)
             if code != 0:
@@ -98,7 +99,8 @@ class CodeQLScanner:
                 db_path,
                 pack,
                 "--format=sarif-latest",
-                f"--output={report_file}"
+                f"--output={report_file}",
+                "--ram=4000",
             ]
             code, out, err = self.runner.run_command(analyze_cmd, cwd=target_path)
             if code != 0:

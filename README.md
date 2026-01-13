@@ -114,4 +114,4 @@ Contributions are welcome! Please follow the standard fork-and-pull-request work
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-*Created with ❤️ by [GuardianAI Team]*
+*Created with ❤️ by Sameer Malik*

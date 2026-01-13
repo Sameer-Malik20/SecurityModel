@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+requests
+motor
+semgrep
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
+google-generativeai
+httpx
+aiofiles
+python-dotenv
+email-validator
+

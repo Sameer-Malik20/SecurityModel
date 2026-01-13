@@ -1,0 +1,12 @@
+__pycache__
+venv
+.env
+.git
+.gitignore
+*.pyc
+manual_report.json
+run_manual_scan.py
+run_ai_analysis.py
+debug_*.py
+codeql-db
+test_*.py

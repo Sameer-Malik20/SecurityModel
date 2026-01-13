@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.vscode/
+.idea/
+saas.db
+*.log
+manual_report.json
+codeql-db/

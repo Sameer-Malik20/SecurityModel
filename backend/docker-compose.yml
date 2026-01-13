@@ -1,0 +1,18 @@
+services:
+  backend:
+    build: .
+    container_name: security_backend
+    restart: always
+    ports:
+      - "8000:8000"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    env_file:
+      - .env
+    volumes:
+      # CRITICAL: Mount docker socket to allow internal ZAP scans to run
+      - /var/run/docker.sock:/var/run/docker.sock
+      # Persist SQLite DB if used (or remove if only using Mongo)
+      - ./saas.db:/app/saas.db
+

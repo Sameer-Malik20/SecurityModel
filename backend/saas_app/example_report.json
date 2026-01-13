@@ -1,0 +1,22 @@
+{
+    "summary": {
+        "total_actionable_issues": 1,
+        "overall_security_posture": "weak"
+    },
+    "issues": [
+        {
+            "title": "Cross-Site Scripting (DOM-based)",
+            "original_rule": "js/xss-through-dom",
+            "category": "xss",
+            "severity": "HIGH",
+            "reason": "User input from URL parameters is directly written to the innerHTML of a dashboard element without sanitization.",
+            "instances": [
+                {
+                    "path": "frontend/src/pages/Dashboard.jsx",
+                    "line": 284,
+                    "code_snippet": "   283: const { userName } = useParams();\n>> 284: document.getElementById('welcome').innerHTML = `Welcome, ${userName}`;\n   285: return <div id=\"welcome\"></div>;"
+                }
+            ]
+        }
+    ]
+}

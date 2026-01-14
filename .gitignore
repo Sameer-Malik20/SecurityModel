@@ -1,0 +1,14 @@
+# Root .gitignore
+node_modules/
+.next/
+__pycache__/
+*.pyc
+.env
+.env.local
+backend/.env
+frontend/.env
+*.db
+.vscode/
+.idea/
+dist/
+build/
